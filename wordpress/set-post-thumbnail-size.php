@@ -1,0 +1,1 @@
+set_post_thumbnail_size( 615, 150, true );
