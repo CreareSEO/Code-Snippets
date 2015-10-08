@@ -1,0 +1,21 @@
+<!—- add this code after the opening body tag -—>
+
+<!—- Start of Facebook SDK -—>
+
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!—- End of Facebook SDK -—>
+
+
+
+<!— add this where you want the feed to appear, adding in the page URL and width and height —>
+
+<div class="fb-page" data-href=“FACEBOOK_PAGE_URL” data-width=“WIDTH” data-height=“HEIGHT” data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
