@@ -1,0 +1,4 @@
+<!-- Add following code to your local.xml file and create a google-tag-manager.phtml within your theme html folder -->
+<reference name="after_body_start">
+      <block type="core/template" name="google_tag_manager" as="google_tag_manager" template="page/html/google-tag-manager.phtml" />
+ </reference>
