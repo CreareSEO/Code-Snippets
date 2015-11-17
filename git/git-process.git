@@ -1,0 +1,37 @@
+cd Desktop/
+
+git clone git@bitbucket.org  	( get this from clone tab in bit bucket )
+
+cd fernhill-stone/        	{ cd into the repo }
+
+git branch	{ shows master }
+
+git checkout -b calculator  	{ create new branch }
+
+git branch	{ shows calculator }
+
+# NOW MAKE CHANGES TO FILES
+
+git status	{ shows edited files - in red }
+
+git add .	{ add edited files to repo }
+
+git status	{ shows edited files - in green}
+
+git commit -m “Added Calculator”       { commit the change to the repo }
+
+git push origin calculator	{ push changes to bitbucket }
+
+# GO INTO BITBUCKET
+
+# Create Pull Request > Merge New Branch into master.pwd
+
+# NOW CONNECT TO LIVE SITE SERVER or DEV SERVER
+
+ssh fernhillstone.com	{ host details should be within .ssh/config }
+
+cd httpdocs/	{ move to folder on server with .git file}
+
+git status
+
+git pull origin master	{ changes should now be on live site }
