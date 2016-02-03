@@ -1,0 +1,27 @@
+<form name="form" method="post" action=“/contact-process.php“>
+	<fieldset>
+		<input required="required" type="text" name="name" id="name"
+		value="<?php if(isset($_POST['name'])) echo $_POST['name'] ; ?>"
+		placeholder="Name*" onclick="this.value=''" />
+	</fieldset>
+
+	<fieldset>
+		<input required="required" type="text" name="phone" id="phone"
+		value="<?php if(isset($_POST['phone'])) echo $_POST['phone'] ; ?>"
+		placeholder="Phone*" onclick="this.value=''" />
+	</fieldset>
+	<fieldset>
+		<input required="required" type="text" name="email" id="email"
+		value="<?php if(isset($_POST['email'])) echo $_POST['email'] ; ?>"
+		placeholder="Email*" onclick="this.value=''" />
+	</fieldset>
+	<p class="sugar" id="pot">
+		<label>If you're human leave this blank:</label>
+		<input name="sugarcup" type="text" id="sugarcup" class="sugarcup" />
+	</p>
+	<fieldset>
+		<label for="message">Message</label>
+		<textarea name="message" id="message" cols="20" rows="20"></textarea>
+	</fieldset>
+	<input type="submit" value="Submit Form">
+</form>
