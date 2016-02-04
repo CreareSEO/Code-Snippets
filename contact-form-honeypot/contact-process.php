@@ -78,8 +78,7 @@ This is an automated reply.
 ";
 $subject="Thank you for your enquiry, $name!";
 
-mail($email, $subject, $autoreply, "From: CUSTOMER NAME GOES HERE -
-Email Confirmation<$email>");
+mail($email, $subject, $autoreply, "From: CUSTOMER NAME GOES HERE - Email Confirmation<$email>");
 
 }
 }
