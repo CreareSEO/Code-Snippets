@@ -17,7 +17,7 @@ $IPnumber = getenv("REMOTE_ADDR");
 $_POST['phone'] = preg_replace("/[\n\r]+/", "", $_POST['phone']);
 $_POST['name'] = preg_replace("/[\n\r]+/", "", $_POST['name']);
 $_POST['email'] = preg_replace("/[\n\r]+/", "", $_POST['email']);
-$_POST[‘message’] = preg_replace("/[\n\r]+/", "", $_POST[‘message’]);
+$_POST['message'] = preg_replace("/[\n\r]+/", "", $_POST['message']);
 
 //
 $msg = "
