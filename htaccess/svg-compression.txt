@@ -1,2 +1,8 @@
 AddType image/svg+xml .svg
 AddOutputFilterByType DEFLATE image/svg+xml
+
+
+//Alternative Option
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
